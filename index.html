@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>RIMY CST RESULT</title>
+    <style>
+       
+    </style>
+</head>
+<body>
+    <header>
+
+    </header>
+    <main>
+        <section>
+             <div class="get-info-container" >
+                <div>
+                    <h3 class="title">RIMT CST 5th SEMESTER RESULT</h3>
+                </div>
+                <div class="get-student-info">
+                   <div class="semester" >
+                        <label for="semester-select">Semester:</label>
+                        <select name="semester" id="semester-select">
+                            <option selected>Cleck here to select</option>
+                            <option value="1">First Semester</option>
+                            <option value="2">Second Semester</option>
+                            <option value="3">Third Semester</option>
+                            <option value="4">Fort Semester</option>
+                            <option value="5">Sixt Semester</option>
+                            <option value="6">Fift Semester</option>
+                            <option value="7">Sevent Semester</option>
+                            <option value="8">Eighth Semester</option>
+                        </select>
+                   </div>
+                    <div class="get-roll">
+                        <label for="roll">Roll:</label>
+                    <input type="text" name="roll" placeholder="Enter your Roll:" id="roll">
+                    </div>
+                    <div class="get-roll">
+                        <label for="registration">Registration:</label>
+                    <input type="text" name="registration" placeholder="Registration No: (Opsonal)" id="registration">
+                    </div>
+                    <button onclick="searchResults()" class="result-btn">Get Result</button>
+                </div>
+             </div>
+        </section>
+        <!-- show result for search -->
+        <section>
+            <div id="result">
+                <!-- <div class="logo-section">
+                    <img class="logo" src="logotop.gif" alt="">
+                    <h4>Ministry of Education, Government of Bangladesh <br>
+                        Bangladesh Technical Education Board</h4>
+                </div>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Roll No:</th>
+                            <th>673583</th>
+                            <th>Registration No:</th>
+                            <th>15000000000</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Name:</td>
+                            <td colspan="3">MD. Shahin Mia</td>
+                        </tr>
+                        <tr>
+                            <td>Semester</td>
+                            <td>5th</td>
+                            <td>Session</td>
+                            <td>21-22</td>
+                        </tr>
+                        <tr>
+                            <td>Technology</td>
+                            <td colspan="3">Computer Science and Technology</td>
+                        </tr>
+                        <tr>
+                            <td>CGPA</td>
+                            <td>9.00</td>
+                            <td>Gender</td>
+                            <td>Male</td>
+                        </tr>
+                    </tbody>
+                    <tfoot>
+                        <tr>
+                            <td>Institute Name</td>
+                            <td colspan="3">Rumdo Institute Of Modern Technology</td>
+                        </tr>
+                    </tfoot>
+                </table> -->
+            </div>
+        </section>
+    </main>
+    <footer>
+
+    </footer>
+    <script src="result.js"></script>
+</body>
+</html>

@@ -1,0 +1,108 @@
+body{
+    background-color: rgb(225, 229, 231);
+}
+.get-info-container{
+    width: 40%;
+    background-color: rgb(216, 213, 210);
+    border-radius: 15px;
+    padding: 20px 0px 50px 0px;
+    margin: 0 auto;
+}
+.get-student-info{
+    width: 70%;
+    margin: auto;
+    border: 2px solid orange;
+    padding: 30px 40px;
+    display:flex;
+    gap: 15px;
+    flex-direction: column;
+    border-radius: 8px;
+    background-color: rgb(207, 212, 218);
+}
+.title{
+    text-align: center;
+    color: green;
+    font-size: 1.7rem;
+    font-weight: 700;
+}
+.semester{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+.get-roll{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+.result-btn{
+    background-color: orange;
+    border: none;
+    border-radius: 8px;
+    font-weight: 700;
+    color: white;
+    padding: 10px 15px;
+}
+#semester-select,#roll,#registration{
+    height: 35px;
+    border-radius: 8px;
+    border: none;
+    padding:0px 10px
+}
+#result{
+    width: 40%;
+    margin: auto;
+    padding-bottom: 40px;
+    background-color: white;
+    border-radius: 10px;
+}
+section{
+    margin: 50px 0px;
+}
+table {
+    width: 90%;
+    margin: 0 auto;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+th, td {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+
+th {
+    background-color: #f2f2f2;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+.logo{
+    width: 100%;
+}
+
+.logo-section{
+    position: relative;
+}
+.logo-section h4{
+    position: absolute;
+    top: 20px;
+    left: 95px;
+    width: 70%;
+    margin: 0 auto;
+    font-weight: 700;
+    font-size: 1.1rem;
+    text-align: center;
+}
+@media (max-width: 768px) {
+    .get-info-container{
+        width: 90%;
+    }
+    #result{
+        width: 90%;
+
+    }
+}
