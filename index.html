@@ -40,9 +40,20 @@
                     </div>
                     <div class="get-roll">
                         <label for="registration">Registration:</label>
-                    <input type="text" name="registration" placeholder="Registration No: (Opsonal)" id="registration">
+                        <input type="text" name="registration" placeholder="Registration No: (Opsonal)" id="registration">
                     </div>
-                    <button onclick="searchResults()" class="result-btn">Get Result</button>
+                    <div class="get-roll">
+                        <div>
+                            <b>
+                                <span id="first-number">2</span>
+                                <span>+</span>
+                                <span id="second-number">2</span>
+                                <span>=</span>
+                            </b>
+                        </div>
+                        <input type="text" placeholder="Answer" id="ans-submit">
+                    </div>
+                    <button disabled onclick="searchResults()" id="result-btn" class="result-btn">Get Result</button>
                 </div>
              </div>
         </section>
@@ -98,6 +109,7 @@
     <footer>
 
     </footer>
+    <script src="app.js"></script>
     <script src="result.js"></script>
 </body>
 </html>

@@ -1,3 +1,7 @@
+const firstNumber = document.getElementById('first-number');
+const secondNumber = document.getElementById('second-number');
+const userAnswer = document.getElementById('ans-submit');
+const resultBtn = document.getElementById('result-btn');
 
 const loadResult = async (roll) =>{
     const response = await fetch('https://nafismahamudshahin.github.io/rimt-cst-result-server/result.json');
@@ -41,7 +45,7 @@ const displayResults = (data) => {
     else if(selectSemesterValue === 7){
         result = cgpa.seventhSemester;
     }
-    else if(selectSemesterValue === 8){
+    else if(selectSemesterValue === 8){ 
         result = cgpa.eighthSemester;
     }
     const showResultContainer = document.getElementById('result');
@@ -92,18 +96,27 @@ const displayResults = (data) => {
 </table>
     `;
 }
-// selectSemester.addEventListener('change', function () {
-//     // Get the selected option value
-//     const selectedValue = selectSemester.value;
-//     selectedSemester(selectedValue);
-// });
-
-// const selectedSemester = (selectedValue) => {
-//     console.log(selectedValue);
-//     return selectedValue;
-// }
 const searchResults = (data) =>{
     const userRollElement = document.getElementById('roll');
     const roll = +userRollElement.value;
     loadResult(roll);
+    rendomAnswers(); 
 }
+
+const rendomAnswers = () =>{
+    const num1 = Math.floor(Math.random()*10);
+    const num2 = Math.floor(Math.random()*10);
+    const total = num1 + num2;
+    firstNumber.innerText=num1;
+    secondNumber.innerText=num2;
+    userAnswer.addEventListener('input',function(e){
+        if(total == e.target.value){
+            document.getElementById('result-btn').disabled = false;
+            resultBtn.style.fontWeight=800;
+            resultBtn.style.color='green';
+        }
+        console.log(e.target.value);
+    })
+    console.log(num1, num2);
+}
+rendomAnswers(); //
