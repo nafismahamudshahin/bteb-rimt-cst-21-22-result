@@ -2,6 +2,7 @@ const firstNumber = document.getElementById('first-number');
 const secondNumber = document.getElementById('second-number');
 const userAnswer = document.getElementById('ans-submit');
 const resultBtn = document.getElementById('result-btn');
+const getRegistration = document.getElementById('registration');
 
 const loadResult = async (roll) =>{
     const response = await fetch('https://nafismahamudshahin.github.io/rimt-cst-result-server/result.json');
@@ -16,13 +17,13 @@ const displayResults = (data) => {
     // select parent container:
     const selectSemester = document.getElementById('semester-select');
 
+    if (!data){
+        return;
+    }
     const {name,roll,gender,semester,tecnnology,session,cgpa}=data;
     let selectSemesterValue = +selectSemester.value;
     let result ;
     let resultSemeter = semester[selectSemesterValue-1];
-    if (!data){
-        return;
-    }
     
     if(selectSemesterValue === 1){
         result = cgpa.firstSemester;
@@ -61,7 +62,7 @@ const displayResults = (data) => {
             <th>Roll No:</th>
             <th>${roll}</th>
             <th>Registration No:</th>
-            <th>15000000000</th>
+            <th>${getRegistration.value?getRegistration.value:"[Not Enty]"}</th>
         </tr>
     </thead>
     <tbody>
