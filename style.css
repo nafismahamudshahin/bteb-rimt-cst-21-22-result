@@ -5,22 +5,26 @@ body{
     font-family: 'Poppins', sans-serif;
     font-family: 'Roboto', sans-serif;
 }
+
 .get-info-container{
-    width: 60%;
+    width: 100%;
     background-color: rgb(216, 213, 210);
     border-radius: 15px;
     padding: 20px 0px 50px 0px;
     margin: 0 auto;
 }
-.get-student-info{
-    width: 70%;
-    margin: auto;
+.info-container{
     border: 2px solid orange;
-    padding: 30px 40px;
+    padding: 20px 20px;
+    border-radius: 8px;
+}
+.get-student-info{
+    width: 100%;
+    margin: 0 auto;
     display:flex;
     gap: 15px;
     flex-direction: column;
-    border-radius: 8px;
+
     background-color: rgb(207, 212, 218);
 }
 .title{
@@ -54,7 +58,7 @@ body{
     padding:0px 10px
 }
 #result{
-    width: 60%;
+    width: 100%;
     margin: auto;
     padding-bottom: 40px;
     background-color: white;
@@ -63,12 +67,23 @@ body{
 section{
     margin: 50px 0px;
 }
-table {
+.table-container{
     width: 90%;
+    margin: 0 auto;
+    /* border: 2px solid red; */
+    /* overflow: hidden; */
+}
+table {
+    font-size: 55%;
+    font-weight: 400;
+    width: 100%;
     margin: 0 auto;
     border-collapse: collapse;
     margin-bottom: 20px;
     margin-top: 20px;
+}
+tr{
+    width: 100%;
 }
 
 th, td {
@@ -101,13 +116,29 @@ tbody tr:nth-child(even) {
     font-size: 1.1rem;
     text-align: center;
 }
-@media (min-width: 400px) {
+@media (min-width: 300px) and (max-width:599px){
     .get-info-container{
-        width: 90%;
-        margin: 0 auto;
+        width: 98%;
     }
     #result{
+        width: 98%;
+        margin: auto;
+    }
+    .logo-section h4{
+        top: 20px;
+        left: 70px;
+        width: 68%;
+        font-weight: 600;
+        font-size: 0.5rem;
+    }
+
+}
+@media (min-width:500px) and (max-width:649px){
+    .get-info-container{
         width: 90%;
+    }
+    #result{
+        width: 100%;
         margin: auto;
     }
     .logo-section h4{
@@ -117,11 +148,7 @@ tbody tr:nth-child(even) {
         font-weight: 600;
         font-size: 0.73rem;
     }
-
-    table {
-        width: 100%;
-    }
-}
+} 
 @media (min-width: 650px) and (max-width:767px) {
     .get-info-container{
         width: 85%;

@@ -56,7 +56,8 @@ const displayResults = (data) => {
     <h4>Ministry of Education, Government of Bangladesh <br>
         Bangladesh Technical Education Board</h4>
 </div>
-<table>
+    <div class ="table-container">
+    <table>
     <thead>
         <tr>
             <th>Roll No:</th>
@@ -95,6 +96,7 @@ const displayResults = (data) => {
         </tr>
     </tfoot>
 </table>
+    </div>
     `;
 }
 const searchResults = (data) =>{

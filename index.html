@@ -19,41 +19,43 @@
                 <div>
                     <h3 class="title">RIMT CST 5th SEMESTER RESULT</h3>
                 </div>
-                <div class="get-student-info">
-                   <div class="semester" >
-                        <label for="semester-select">Semester:</label>
-                        <select name="semester" id="semester-select">
-                            <option selected>Cleck here to select</option>
-                            <option value="1">First Semester</option>
-                            <option value="2">Second Semester</option>
-                            <option value="3">Third Semester</option>
-                            <option value="4">Fort Semester</option>
-                            <option value="5">Sixt Semester</option>
-                            <option value="6">Fift Semester</option>
-                            <option value="7">Sevent Semester</option>
-                            <option value="8">Eighth Semester</option>
-                        </select>
-                   </div>
-                    <div class="get-roll">
-                        <label for="roll">Roll:</label>
-                    <input type="text" name="roll" placeholder="Enter your Roll:" id="roll">
-                    </div>
-                    <div class="get-roll">
-                        <label for="registration">Registration:</label>
-                        <input type="text" name="registration" placeholder="Registration No: (Opsonal)" id="registration">
-                    </div>
-                    <div class="get-roll">
-                        <div>
-                            <b>
-                                <span id="first-number">2</span>
-                                <span>+</span>
-                                <span id="second-number">2</span>
-                                <span>=</span>
-                            </b>
+                <div class="info-container">
+                    <div class="get-student-info">
+                        <div class="semester" >
+                             <label for="semester-select">Semester:</label>
+                             <select name="semester" id="semester-select">
+                                 <option selected>Cleck here to select</option>
+                                 <option value="1">First Semester</option>
+                                 <option value="2">Second Semester</option>
+                                 <option value="3">Third Semester</option>
+                                 <option value="4">Fort Semester</option>
+                                 <option value="5">Sixt Semester</option>
+                                 <option value="6">Fift Semester</option>
+                                 <option value="7">Sevent Semester</option>
+                                 <option value="8">Eighth Semester</option>
+                             </select>
                         </div>
-                        <input type="text" placeholder="Answer" id="ans-submit">
-                    </div>
-                    <button disabled onclick="searchResults()" id="result-btn" class="result-btn">Get Result</button>
+                         <div class="get-roll">
+                             <label for="roll">Roll:</label>
+                         <input type="text" name="roll" placeholder="Enter your Roll:" id="roll">
+                         </div>
+                         <div class="get-roll">
+                             <label for="registration">Registration:</label>
+                             <input type="text" name="registration" placeholder="Registration No: (Opsonal)" id="registration">
+                         </div>
+                         <div class="get-roll">
+                             <div>
+                                 <b>
+                                     <span id="first-number">2</span>
+                                     <span>+</span>
+                                     <span id="second-number">2</span>
+                                     <span>=</span>
+                                 </b>
+                             </div>
+                             <input type="text" placeholder="Answer" id="ans-submit">
+                         </div>
+                         <button disabled onclick="searchResults()" id="result-btn" class="result-btn">Get Result</button>
+                     </div>
                 </div>
              </div>
         </section>
