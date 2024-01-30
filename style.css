@@ -101,7 +101,7 @@ tbody tr:nth-child(even) {
     font-size: 1.1rem;
     text-align: center;
 }
-@media (min-width: 500px) {
+@media (min-width: 400px) {
     .get-info-container{
         width: 90%;
         margin: 0 auto;
