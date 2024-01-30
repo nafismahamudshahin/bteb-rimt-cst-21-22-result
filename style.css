@@ -1,5 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Roboto:wght@400;500;700&display=swap');
+
 body{
     background-color: rgb(225, 229, 231);
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Roboto', sans-serif;
 }
 .get-info-container{
     width: 60%;
@@ -97,12 +101,33 @@ tbody tr:nth-child(even) {
     font-size: 1.1rem;
     text-align: center;
 }
-@media (max-width: 768px) {
+@media (min-width: 500px) {
     .get-info-container{
         width: 90%;
+        margin: 0 auto;
     }
     #result{
         width: 90%;
+        margin: auto;
+    }
+    .logo-section h4{
+        top: 20px;
+        left: 70px;
+        width: 68%;
+        font-weight: 600;
+        font-size: 0.73rem;
+    }
+
+    table {
+        width: 100%;
+    }
+}
+@media (min-width: 650px) and (max-width:767px) {
+    .get-info-container{
+        width: 85%;
+    }
+    #result{
+        width: 85%;
     }
     .logo-section h4{
         top: 20px;
@@ -113,18 +138,27 @@ tbody tr:nth-child(even) {
     }
 }
 
-@media (min-width: 768px) and (max-width:950px){
+@media (min-width: 768px){
     .get-info-container{
-        width: 80%;
+        width: 60%;
     }
     #result{
-        width: 80%;
+        width: 60%;
     }
     .logo-section h4{
         top: 20px;
         left: 10px;
         width: 98%;
         font-weight: 700;
-        font-size: 1rem;
+        font-size: 100%;
+    }
+}
+@media (min:850px) {
+    .logo-section h4{
+        top: 20px;
+        left: 10px;
+        width: 98%;
+        font-weight: 700;
+        font-size: 3rem;
     }
 }

@@ -116,8 +116,6 @@ const rendomAnswers = () =>{
             resultBtn.style.fontWeight=800;
             resultBtn.style.color='green';
         }
-        console.log(e.target.value);
     })
-    console.log(num1, num2);
 }
 rendomAnswers(); //
