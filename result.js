@@ -98,11 +98,15 @@ const displayResults = (data) => {
 </table>
     </div>
     `;
+    // clear the input fields
+    getRegistration.value='';
 }
 const searchResults = (data) =>{
     const userRollElement = document.getElementById('roll');
     const roll = +userRollElement.value;
     loadResult(roll);
+    // clear the input fields
+    userRollElement.value = '';
     rendomAnswers(); 
 }
 
@@ -119,5 +123,6 @@ const rendomAnswers = () =>{
             resultBtn.style.color='green';
         }
     })
+    userAnswer.value='';
 }
 rendomAnswers(); //
