@@ -24,8 +24,6 @@ body{
     display:flex;
     gap: 15px;
     flex-direction: column;
-
-    background-color: rgb(207, 212, 218);
 }
 .title{
     text-align: center;

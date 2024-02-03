@@ -96,6 +96,7 @@ const displayResults = (data) => {
         </tr>
     </tfoot>
 </table>
+<button onclick="location.reload()" class='result-btn'>Search more</button>
     </div>
     `;
     // clear the input fields
@@ -125,4 +126,4 @@ const rendomAnswers = () =>{
     })
     userAnswer.value='';
 }
-rendomAnswers(); //
+rendomAnswers(); // 
