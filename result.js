@@ -124,6 +124,7 @@ const rendomAnswers = () =>{
             resultBtn.style.color='green';
         }
     })
+    
     userAnswer.value='';
 }
 rendomAnswers(); // 
