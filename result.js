@@ -51,7 +51,12 @@ const displayResults = (data) => {
     else if(selectSemesterValue === 8){ 
         result = cgpa.eighthSemester;
     }
-   
+
+    // if result === 0 then result in not published yet.
+    if(result === 0){
+        showResultContainer.innerHTML=`<h3>This Semester Result Not publish</h3>`
+        return;
+    }
     showResultContainer.innerHTML = `
     <div class="logo-section">
     <img class="logo" src="logotop.gif" alt="">
@@ -116,7 +121,7 @@ const searchResults = (data) =>{
 const rendomAnswers = () =>{
     const num1 = Math.floor(Math.random()*10);
     const num2 = Math.floor(Math.random()*10);
-    
+
     // if random number = 0 the then chenge the number values
     if(num1 === 0||num2 === 0){
         num1 = 5;
