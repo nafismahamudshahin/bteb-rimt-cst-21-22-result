@@ -127,4 +127,10 @@ const rendomAnswers = () =>{
     
     userAnswer.value='';
 }
+// trigger button on Enter:
+userAnswer.addEventListener('keypress',function(e){
+    if(e.key === 'Enter'){
+        searchResults();
+    }
+})
 rendomAnswers(); // 
