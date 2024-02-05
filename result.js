@@ -3,6 +3,7 @@ const secondNumber = document.getElementById('second-number');
 const userAnswer = document.getElementById('ans-submit');
 const resultBtn = document.getElementById('result-btn');
 const getRegistration = document.getElementById('registration');
+const showResultContainer = document.getElementById('result');
 
 const loadResult = async (roll) =>{
     const response = await fetch('https://nafismahamudshahin.github.io/rimt-cst-result-server/result.json');
@@ -18,6 +19,7 @@ const displayResults = (data) => {
     const selectSemester = document.getElementById('semester-select');
 
     if (!data){
+        showResultContainer.innerHTML=`<h3>Data Not found! Try again.</h3>`
         return;
     }
     const {name,roll,gender,semester,tecnnology,session,cgpa}=data;
@@ -49,7 +51,7 @@ const displayResults = (data) => {
     else if(selectSemesterValue === 8){ 
         result = cgpa.eighthSemester;
     }
-    const showResultContainer = document.getElementById('result');
+   
     showResultContainer.innerHTML = `
     <div class="logo-section">
     <img class="logo" src="logotop.gif" alt="">
@@ -114,6 +116,14 @@ const searchResults = (data) =>{
 const rendomAnswers = () =>{
     const num1 = Math.floor(Math.random()*10);
     const num2 = Math.floor(Math.random()*10);
+    
+    // if random number = 0 the then chenge the number values
+    if(num1 === 0||num2 === 0){
+        num1 = 5;
+        if(num2 === 0){
+            num2 = 5;
+        }
+    }
     const total = num1 + num2;
     firstNumber.innerText=num1;
     secondNumber.innerText=num2;
@@ -122,6 +132,10 @@ const rendomAnswers = () =>{
             document.getElementById('result-btn').disabled = false;
             resultBtn.style.fontWeight=800;
             resultBtn.style.color='green';
+        }else{
+            document.getElementById('result-btn').disabled = true;
+            resultBtn.style.fontWeight=600;
+            resultBtn.style.color='white';
         }
     })
     

@@ -14,7 +14,6 @@ body{
     margin: 0 auto;
 }
 .info-container{
-    border: 2px solid orange;
     padding: 20px 20px;
     border-radius: 8px;
 }
@@ -147,7 +146,7 @@ tbody tr:nth-child(even) {
         font-size: 0.73rem;
     }
 } 
-@media (min-width: 650px) and (max-width:767px) {
+@media (min-width: 650px) and (max-width:867px) {
     .get-info-container{
         width: 85%;
     }
@@ -163,7 +162,7 @@ tbody tr:nth-child(even) {
     }
 }
 
-@media (min-width: 768px){
+@media (min-width: 868px){
     .get-info-container{
         width: 60%;
     }
@@ -175,15 +174,18 @@ tbody tr:nth-child(even) {
         left: 10px;
         width: 98%;
         font-weight: 700;
+        font-size: 1.5rem;
+    }
+    table{
         font-size: 100%;
     }
 }
-@media (min:850px) {
+@media (min-width:869px) {
     .logo-section h4{
         top: 20px;
         left: 10px;
         width: 98%;
-        font-weight: 700;
-        font-size: 3rem;
+        font-weight: 800;
+        font-size: 1.1rem;
     }
 }
