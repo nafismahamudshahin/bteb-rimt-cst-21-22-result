@@ -19,6 +19,8 @@ const displayResults = (data) => {
     const selectSemester = document.getElementById('semester-select');
 
     if (!data){
+        showResultContainer.style.textAlign = 'center';
+        showResultContainer.style.color = 'red';
         showResultContainer.innerHTML=`<h3>Data Not found! Try again.</h3>`
         return;
     }
@@ -54,9 +56,12 @@ const displayResults = (data) => {
 
     // if result === 0 then result in not published yet.
     if(result === 0){
+        showResultContainer.style.textAlign = 'center';
+        showResultContainer.style.color ='red';
         showResultContainer.innerHTML=`<h3>This Semester Result Not publish</h3>`
         return;
     }
+    showResultContainer.style.color = 'black';
     showResultContainer.innerHTML = `
     <div class="logo-section">
     <img class="logo" src="logotop.gif" alt="">
