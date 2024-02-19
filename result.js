@@ -8,7 +8,7 @@ const showResultContainer = document.getElementById('result');
 const loadResult = async (roll) =>{
     const response = await fetch('https://nafismahamudshahin.github.io/rimt-cst-result-server/result.json');
     const data = await response.json();
-    // console.log(data);
+    // console.table(data);
     const userData = data.find(d => d.roll === roll)
     displayResults(userData);
 }
